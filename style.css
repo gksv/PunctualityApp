@@ -13,8 +13,10 @@
     font-weight: 200;
     border: 1px solid #d3d3d3;
     border-radius: 5px;
-    margin: 100px 20px 10px 20px;
+    margin: 100px auto;
     position: relative;
+    width: 70%;
+    height: 70%;
 }
 
 #header, #navigationDiv {
@@ -79,6 +81,22 @@ td, th{
 
 #navigatorDiv {
    border: 0px; 
+   padding: 10px 0px;
+}
+
+#next-page-selector {
+    padding: 5px 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    border: 1px solid #d3d3d3;
+    border-top-left-radius: 5px;
+}
+
+#previous-page-selector {
+    border-right: 1px solid #d3d3d3;
+    position: absolute;
+    right: 0;
 }
 
 #page-selector {
