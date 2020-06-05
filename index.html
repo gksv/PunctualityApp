@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_container">
+        <div id="header">
+            <img src="images/mike_wazowski.png" alt="logo">
+            <p id="logo_name">Mike</p>
+            <button id="calendar">This Pay Period</button>
+        </div>
+
+        <div class="status">
+            <!-- how to make circular progress bar -->
+            <div class="progress_bar">
+                <h2>80</h2>                
+            </div>
+            <p>For clock ins and outs within 30 minutes of his roster,<br>
+            Mike is punctual 80% of the time. TIme saved: 9 mins.</p>
+            <div id="board_container">
+                <div class="1">
+                    <p>Arrived Late</p>
+                    <p><strong>0</strong></p>
+                </div>
+                <div class="2">
+                    <p>Punctual</p>
+                    <p><strong>8</strong></p>
+                </div>
+                <div class="3">
+                    <p>Left Early</p>
+                    <p><strong>2</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Rostered Start</th>
+                    <th>Actual Start</th>
+                    <th>Rostered Finish</th>
+                    <th>Actual Finish</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>March 26th 2016</td>
+                    <td>12:30pm</td>
+                    <td>on time</td>
+                    <td>5:45pm</td>
+                    <td>left early</td>
+                </tr>
+                <tr>
+                    <td>March 25th 2016</td>
+                    <td>12:30pm</td>
+                    <td>on time</td>
+                    <td>5:45pm</td>
+                    <td>on time</td>
+                </tr>
+                <tr>
+                    <td>March 24th 2016</td>
+                    <td>8:30am</td>
+                    <td>on time</td>
+                    <td>5:45pm</td>
+                    <td>left early</td>
+                </tr>
+                <tr>
+                    <td>March 22nd 2016</td>
+                    <td>1:00pm</td>
+                    <td>on time</td>
+                    <td>5:45pm</td>
+                    <td>left early</td>
+                </tr>
+                <tr>
+                    <td>March 21st 2016</td>
+                    <td>12:30pm</td>
+                    <td>on time</td>
+                    <td>5:45pm</td>
+                    <td>left early</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="navigationDiv">
+            <nav>Show</nav>
+            <div id="page-selector">
+                <a href="#">Previous</a>
+                <a href="#">Next</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footerDiv">
+        <p>Showing 1 to 5 of 5 shifts</p>
+    </div>
+</body>
+</html>
