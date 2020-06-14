@@ -3,27 +3,26 @@
 * {
     padding: 0px;
     margin: 0px;
-    overflow: hidden;
-    line-height: 1.5em;
+    /* overflow: hidden;
+    line-height: 1.5em; */
 }
 
 
-.main_container {
+.main-container {
     font-family: 'Lato', sans-serif;
     font-weight: 200;
     border: 1px solid #d3d3d3;
-    border-radius: 5px;
+    border-radius: 4px;
     margin: 100px auto;
     position: relative;
     width: 70%;
     height: 70%;
 }
 
-#header, #navigationDiv {
+.header {
     padding: 10px;
     margin: 0px;
     display: inline-flex;
-    border-bottom: 1px solid #d3d3d3;
     width: 100%;
 }   
 
@@ -37,7 +36,7 @@ img {
     
 }
 
-#logo_name {
+#logo-name {
     position: absolute;
     left: 80px;
     margin-left: 15px;
@@ -48,26 +47,40 @@ img {
     text-decoration: none;
 }
 
-#calendar {
-    position: absolute;
-    right: 0;
-    margin: 10px 30px;
-    padding: 5px 40px;
-    text-align: right;
+.datepicker-btn {
+    display: flex;
+    align-items: center;
+    /* margin: 10px 20px; */
+    border: 1px solid #d3d3d3; 
+    padding: 4px 4px;
+    text-decoration: none;
 }
-
 
 .status {
     display: inline;
     text-align: center;
 }
 
-#board_container  div {
+.progress-bar {
+    border-top: 1px solid #d3d3d3; 
+    padding: 30px;
+}
+
+#board-container .board-container-item {
     border: 1px solid #d3d3d3;
-    padding: 5px 20px;
+    padding: 10px 10px;
     display: inline-flex;
-    margin: 0px 5px;
+    margin: 15px 5px;
     text-transform: uppercase;
+    text-decoration-color: lightgrey;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+
+#item-score {
+    font-weight: bold;
+    padding: 0px 0px 0px 40px;
 }
 
 .table {
@@ -79,32 +92,23 @@ td, th{
     border-bottom: 1px solid #d3d3d3;
 }
 
-#navigatorDiv {
-   border: 0px; 
-   padding: 10px 0px;
+
+.navigation-div {
+    /* margin: 20px 20px; */
+    margin: 10px 20px;
+    padding: 10px 40px;
+    display: inline-flex;
 }
 
-#next-page-selector {
-    padding: 5px 10px;
-    position: absolute;
-    right: 10px;
-    bottom: 5px;
+.page-selector {
+    display: inline-flex;
     border: 1px solid #d3d3d3;
-    border-top-left-radius: 5px;
+    position: absolute;
+    right: 20px;
+    padding: 0px 20px 0px 20px;
+    margin: auto;
 }
 
-#previous-page-selector {
-    border-right: 1px solid #d3d3d3;
-    position: absolute;
-    right: 0;
-}
-
-#page-selector {
-    position: absolute;
-    right: 30px;
-    border: 1px solid #d3d3d3;
-    padding: 0px 5px;
-    text-emphasis: none;
-    
-    text-transform: uppercase;
+#prev {
+   border;
 }

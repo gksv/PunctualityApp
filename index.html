@@ -6,34 +6,49 @@
     <title>Home</title>
 
     <link rel="stylesheet" href="style.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script>
+        $('#main-container').datepicker();
+    </script>
+
 </head>
 <body>
-    <div class="main_container">
-        <div id="header">
+    <div class="main-container">
+        <div class="header">
             <img src="images/mike_wazowski.png" alt="logo">
-            <p id="logo_name">Mike</p>
-            <button id="calendar">This Pay Period</button>
+            <p id="logo-name">Mike</p>
+            <div class="datepicker-btn">
+                <a href="#" id="calendar">
+                    <i class="fa fa-calendar">This Pay Period</i>
+                    <i class="fa fa-caret-down"></i>
+                </a>
+            </div>
         </div>
 
         <div class="status">
             <!-- how to make circular progress bar -->
-            <div class="progress_bar">
+            <div class="progress-bar">
                 <h2>80</h2>                
             </div>
             <p>For clock ins and outs within 30 minutes of his roster,<br>
             Mike is punctual 80% of the time. TIme saved: 9 mins.</p>
-            <div id="board_container">
-                <div class="1">
+            <div id="board-container">
+                <div class="board-container-item">
                     <p>Arrived Late</p>
-                    <p><strong>0</strong></p>
+                    <p id="item-score"><strong>0</strong></p>
                 </div>
-                <div class="2">
+                <div class="board-container-item">
                     <p>Punctual</p>
-                    <p><strong>8</strong></p>
+                    <p id="item-score"><strong>8</strong></p>
                 </div>
-                <div class="3">
+                <div class="board-container-item">
                     <p>Left Early</p>
-                    <p><strong>2</strong></p>
+                    <p id="item-score"><strong>2</strong></p>
                 </div>
             </div>
         </div>
@@ -87,19 +102,33 @@
             </tbody>
         </table>
 
-        <div id="navigationDiv">
-            <nav>Show</nav>
-            <div id="next-page-selector">
-                <a href="#">Previous</a>
+        <div class="navigation-div">
+
+            <div id="pagination">
+                <p>Show</p>
             </div>
-            <div id="next-page-selector">
-                <a href="#">Next</a>
+
+            <div class="page-selector">
+                <div id ="prev">
+                    <!-- <a href="#">Previous</a> -->
+                    <p>Previous</p>
+                    <!-- <p>Next</p> -->
+                </div>
+    
+                <div id="next">
+                    <!-- <a href="#">Next</a> -->
+                    <p>Next</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div id="footerDiv">
+    <div id="footer">
         <p>Showing 1 to 5 of 5 shifts</p>
     </div>
-</body>
+</body> 
+
+
+
+
 </html>
