@@ -42,17 +42,25 @@ img {
     margin-left: 15px;
     margin: 20px 0px;
     font-size: 18px;
-    text-align: center;
+    /* text-align: center; */
     font-size: 18px;
     text-decoration: none;
 }
 
 .datepicker-btn {
-    display: flex;
-    align-items: center;
-    /* margin: 10px 20px; */
     border: 1px solid #d3d3d3; 
-    padding: 4px 4px;
+    border-radius: 4px;
+    padding: 2px 4px;
+    
+    position: absolute;
+    right: 30px;
+    top: 6%;
+}
+
+.datepicker-btn i, a{
+    margin: 0px 2px;
+    padding: 0px 5px;
+    
     text-decoration: none;
 }
 
